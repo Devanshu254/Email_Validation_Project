@@ -1,0 +1,103 @@
+*{
+    padding:0;
+    margin:0;
+    /* background-color: yellow; */
+    /* font-family: "Acme", sans-serif; */
+    /* font-weight: 400; */
+    /* font-style: normal; */
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 19px 12px;
+}
+ul {
+    display: flex;
+}
+ul li {
+    list-style: None;
+    padding: 0 13px;
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+ul >li> a:hover{
+    color: gray;
+}
+main {
+    min-height: 100vh;
+    padding: 2px;
+}
+.container {
+    background-color: azure;
+    max-width: 80vw;
+    margin: auto;   /*It will make it in between*/
+    padding: 9px 15px;
+}
+.container h1 {
+    padding: 12px 0px;
+}
+.btn {
+    background: black;
+    color: white;
+    padding: 9px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#resultCont div::first-letter {
+    text-transform: uppercase;
+}
+footer {
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    align-items: center;
+    display: flex;
+}
+.logo img {
+    width: 15px;
+    filter: invert(1);
+}   
+input[type='text'] {
+    min-width: 244px;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        background-color: lightblue;
+    }
+    .container {
+        font-size: 12px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .logo {
+        padding: 6px 0px; /*6px padding, left right se 0.   */
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+    .logo span {
+        font-size: 20px;
+    }
+    .logo img {
+        width: 15px;
+        filter: invert(1);
+    }
+}
